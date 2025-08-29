@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Sidebar Header -->
+  <header id="header">
+    <div class="profile-img">
+      <img src="img/fash-profile.jpg" alt="Profile">
+    </div>
+    <h1 class="sitename">My Portfolio</h1>
+
+    <!-- Social Links -->
+       <div class="social-links text-center">
+      <a href="https://x.com/fash_afolabi" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://m.facebook.com/david.owolabi.5496/" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/fash_the_designer/" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/afolabi-owolabi-b1021b269" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+        <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-container">
+      <h1>Hi, I'm Owolabi Afolabi</h1>
+      <p>I’m a <span class="typed-text">Graphic Designer & Frontend Enthusiast</span><span class="cursor"></span></p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="section-title">
+      <h2>About Me</h2>
+      <p>A passionate designer who loves turning ideas into reality through creativity and clean designs.</p>
+    </div>
+
+    <div class="about-content">
+      <div class="about-img">
+        <img src="img/fash-profile.jpg" alt="About Me">
+      </div>
+      <div class="about-text">
+        <h3>Graphic Designer & Frontend Enthusiast</h3>
+        <p>I specialize in creating modern, minimal, and user-friendly designs. Currently expanding my skills into frontend development to bring my designs to life.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="section-title">
+      <h2>My Skills</h2>
+    </div>
+
+    <div class="skills-content">
+      <div class="skills-left">
+        <div class="skill">
+          <p>Photoshop</p>
+          <div class="progress"><div class="progress-bar" style="width: 90%;">90%</div></div>
+        </div>
+        <div class="skill">
+          <p>Illustrator</p>
+          <div class="progress"><div class="progress-bar" style="width: 85%;">85%</div></div>
+        </div>
+        <div class="skill">
+          <p>Figma</p>
+          <div class="progress"><div class="progress-bar" style="width: 80%;">80%</div></div>
+        </div>
+      </div>
+
+      <div class="skills-right">
+        <span class="tag">UI/UX</span>
+        <span class="tag">Branding</span>
+        <span class="tag">Logo Design</span>
+        <span class="tag">Web Design</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="section-title">
+      <h2>Portfolio</h2>
+    </div>
+    <div class="portfolio-container">
+      <div class="portfolio-item">
+        <img src="img/gallery/gallery-1.jpg" alt="Project 1">
+        <div class="portfolio-info">Project 1 - Branding</div>
+      </div>
+      <div class="portfolio-item">
+        <img src="img/gallery/gallery-9-2.png" alt="Project 2">
+        <div class="portfolio-info">Project 2 - UI/UX</div>
+      </div>
+      <div class="portfolio-item">
+        <img src="img/gallery/gallery-9-3.jpg" alt="Project 3">
+        <div class="portfolio-info">Project 3 - Logo Design</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="section-title">
+      <h2>Contact Me</h2>
+    </div>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Lagos, Nigeria</p>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <p>john@example.com</p>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <p>+234 810 000 0000</p>
+        </div>
+      </div>
+
+      <form class="contact-form">
+        <input type="text" class="form-control" placeholder="Your Name" required>
+        <input type="email" class="form-control" placeholder="Your Email" required>
+        <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
