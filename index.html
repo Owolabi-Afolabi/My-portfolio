@@ -1,31 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fash The Designer | Portfolio</title>
+  <link rel="stylesheet" href="main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@700&display=swap" rel="stylesheet">
   <script src="main.js" defer></script>
 </head>
 <body>
-
   <!-- Header -->
   <header class="header">
-    <div class="header__brand">
-      <h1 class="header__logo">My Portfolio</h1>
-    </div>
-
-    <!-- Social Links -->
-    <aside class="header__social">
-      <a href="https://x.com/fash_afolabi" class="header__social-link">X</a>
-      <a href="https://m.facebook.com/david.owolabi.5496/" class="header__social-link">Facebook</a>
-      <a href="https://www.instagram.com/fash_the_designer/" class="header__social-link">Instagram</a>
-      <a href="https://www.linkedin.com/in/afolabi-owolabi-b1021b269" class="header__social-link">LinkedIn</a>
-    </aside>
-
-    <!-- Navigation -->
-    <nav class="nav">
+    <div class="header__brand">My Portfolio</div>
+    <nav class="nav" id="nav">
       <ul class="nav__list">
         <li><a href="#hero" class="nav__link nav__link--active">Home</a></li>
         <li><a href="#about" class="nav__link">About</a></li>
@@ -34,123 +21,118 @@
         <li><a href="#contact" class="nav__link">Contact</a></li>
       </ul>
     </nav>
+    <button class="nav__toggle" id="navToggle">☰</button>
   </header>
 
-  <!-- Main -->
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-      <div class="hero__container">
-        <h1 class="hero__title">Hi, I'm Owolabi Afolabi</h1>
-        <p class="hero__subtitle">
-          I’m a <span class="hero__typed">Graphic Designer & Frontend Enthusiast</span>
-        </p>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-      <div class="section-title">
-        <h2 class="section-title__heading">About Me</h2>
-        <p class="section-title__text">A passionate designer who loves turning ideas into reality through creativity and clean designs.</p>
+  <!-- Hero Section -->
+  <section id="hero" class="hero hero--bg">
+    <div class="hero__container">
+      <div class="hero__text">
+        <h1>
+          FASH THE DESIGNER<br>
+          <span class="highlight">A Creative Designer</span><br>
+          <span class="bold">I Create Bold and Stunning Designs</span>
+        </h1>
+        <p>I create amazing brand visuals for your webpage and businesses.</p>
+        <a href="#contact" class="btn">Contact Me</a>
       </div>
 
-      <div class="about__content">
-        <div class="about__image">
-          <img src="img/fash-profile.jpg" alt="About Me">
+      <div class="hero__image">
+        <img src="img/GD-Clipart.png" alt="Portfolio hero">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section-->
+ <section class="about" id="about">
+  <div class="about__card">
+    <h2 class="about__title">About Me</h2>
+    <p class="about__text">
+      A passionate designer who loves turning ideas into reality through creativity and clean designs.
+    </p>
+    <p class="about__text">
+      I specialize in creating modern, minimal, and user-friendly designs. Currently expanding my skills into frontend development to bring my designs to life.
+    </p>
+    <div class="about__corner">
+      <div class="about__arrow">→</div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Skills -->
+  <section id="skills" class="skills">
+    <h2 class="section-title">My Skills</h2>
+    <div class="section__underline"></div>
+
+    <div class="skills__grid">
+      <div class="skill">
+        <p>Photoshop</p>
+        <div class="skill__bar"><span data-width="90%"></span></div>
+      </div>
+      <div class="skill">
+        <p>Illustrator</p>
+        <div class="skill__bar"><span data-width="85%"></span></div>
+      </div>
+      <div class="skill">
+        <p>Figma</p>
+        <div class="skill__bar"><span data-width="80%"></span></div>
+      </div>
+      <div class="skill">
+        <p>UI/UX</p>
+        <div class="skill__bar"><span data-width="75%"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="portfolio">
+    <h2 class="section-title">Portfolio</h2>
+    <div class="section__underline"></div>
+    <div class="portfolio__grid">
+      <div class="portfolio__item">
+        <img src="img/gallery/gallery-1.jpg" alt="Project 1">
+        <div class="portfolio__overlay">Project 1 - Branding</div>
+      </div>
+      <div class="portfolio__item">
+        <img src="img/gallery/gallery-9-2.png" alt="Project 2">
+        <div class="portfolio__overlay">Project 2 - UI/UX</div>
+      </div>
+      <div class="portfolio__item">
+        <img src="img/gallery/gallery-9-3.jpg" alt="Project 3">
+        <div class="portfolio__overlay">Project 3 - Logo Design</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="section__underline"></div>
+    <div class="contact__container">
+      <form class="contact__form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div class="contact__info">
+        <p>📍 Lagos, Nigeria</p>
+        <p>📧 owolabidavid24@mail.com</p>
+        <p>📞 +234 906 871 0464</p>
+        <div class="social">
+          <a href="#">X</a>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
         </div>
-        <div class="about__text">
-          <h3 class="about__subtitle">Graphic Designer & Frontend Enthusiast</h3>
-          <p>I specialize in creating modern, minimal, and user-friendly designs. Currently expanding my skills into frontend development to bring my designs to life.</p>
-        </div>
       </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-      <div class="section-title">
-        <h2 class="section-title__heading">My Skills</h2>
-      </div>
-
-      <div class="skills__content">
-        <div class="skills__left">
-          <div class="skills__item">
-            <p class="skills__name">Photoshop</p>
-            <div class="skills__progress">
-              <div class="skills__bar skills__bar--90">90%</div>
-            </div>
-          </div>
-          <div class="skills__item">
-            <p class="skills__name">Illustrator</p>
-            <div class="skills__progress">
-              <div class="skills__bar skills__bar--85">85%</div>
-            </div>
-          </div>
-          <div class="skills__item">
-            <p class="skills__name">Figma</p>
-            <div class="skills__progress">
-              <div class="skills__bar skills__bar--80">80%</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skills__right">
-          <span class="skills__tag">UI/UX</span>
-          <span class="skills__tag">Branding</span>
-          <span class="skills__tag">Logo Design</span>
-          <span class="skills__tag">Web Design</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-      <div class="section-title">
-        <h2 class="section-title__heading">Portfolio</h2>
-      </div>
-      <div class="portfolio__grid">
-        <div class="portfolio__item">
-          <img src="img/gallery/gallery-1.jpg" alt="Project 1">
-          <div class="portfolio__info">Project 1 - Branding</div>
-        </div>
-        <div class="portfolio__item">
-          <img src="img/gallery/gallery-9-2.png" alt="Project 2">
-          <div class="portfolio__info">Project 2 - UI/UX</div>
-        </div>
-        <div class="portfolio__item">
-          <img src="img/gallery/gallery-9-3.jpg" alt="Project 3">
-          <div class="portfolio__info">Project 3 - Logo Design</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <div class="section-title">
-        <h2 class="section-title__heading">Contact Me</h2>
-      </div>
-
-      <div class="contact__content">
-        <div class="contact__info">
-          <p class="contact__item">📍 Lagos, Nigeria</p>
-          <p class="contact__item">📧 owolabidavid24@mail.com</p>
-          <p class="contact__item">📞 +234 906 871 0464</p>
-        </div>
-
-        <form class="contact__form">
-          <input type="text" class="contact__input" placeholder="Your Name" required>
-          <input type="email" class="contact__input" placeholder="Your Email" required>
-          <textarea class="contact__input contact__textarea" rows="5" placeholder="Message" required></textarea>
-          <button type="submit" class="contact__button">Send Message</button>
-        </form>
-      </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <p class="footer__text">© 2025 Owolabi Afolabi. All rights reserved.</p>
+    <p>© 2025 Owolabi Afolabi. All rights reserved.</p>
   </footer>
 </body>
 </html>
